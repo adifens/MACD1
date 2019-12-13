@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
  <head>
  <Title>Registration Form</Title>
  <style type="text/css">
