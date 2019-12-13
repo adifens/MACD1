@@ -39,6 +39,9 @@
         print("Error connecting to SQL Server.");
         die(print_r($e));
     } 
+    $connectionInfo = array("UID" => "adifens", "pwd" => "{Efendy17}", "Database" => "databaseku", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+    $serverName = "tcp:databasekuserver.database.windows.net,1433";
+    $conn = sqlsrv_connect($serverName, $connectionInfo);
 
     if (isset($_POST['submit'])) {
         try {
@@ -58,9 +61,6 @@
         } catch(Exception $e) {
             echo "Failed: " . $e;
         }
-        $connectionInfo = array("UID" => "adifens", "pwd" => "{Efendy17}", "Database" => "databaseku", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-        $serverName = "tcp:databasekuserver.database.windows.net,1433";
-        $conn = sqlsrv_connect($serverName, $connectionInfo);
 
         echo "<h3>Your're registered!</h3>";
     } else if (isset($_POST['load_data'])) {
