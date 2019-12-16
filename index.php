@@ -26,7 +26,7 @@
        <input type="submit" name="load_data" value="Load Data" />
  </form>
  <?php
-    $host = "databasekuserver.database.windows.net";
+    $host = "tcp:databasekuserver.database.windows.net,1433";
     $user = "adifens";
     $pass = "Efendy17";
     $db = "databaseku";
