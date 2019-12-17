@@ -26,8 +26,7 @@
        <input type="submit" name="submit" value="Submit" />
        <input type="submit" name="load_data" value="Load Data" />
  </form>
- </body>
- </html>
+ 
  <?php
     $host = "tcp:databasekuserver.database.windows.net,1433";
     $user = "adifens";
@@ -96,4 +95,5 @@
         }
     }
  ?>
- 
+ </body>
+</html> 
