@@ -28,10 +28,6 @@
  </form>
  
 <?php
-    $host = "tcp:databasekuserver.database.windows.net,1433";
-    $user = "adifens";
-    $pass = "";
-    $db = "databaseku";
   
     // PHP Data Objects(PDO) Sample Code:
     try {
